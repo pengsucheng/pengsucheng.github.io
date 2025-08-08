@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{{ $params := partial "params-helper.html" . }}
+{{ $dataTheme := "" }}
+
+{{ if and (ne $params.colorTheme "auto") (eq $params.enableColorThemeSwitcher false) }}
+    {{ $dataTheme = $params.colorTheme }}
+{{ end }}
+
+<html lang="{{ site.Params.locale | default site.LanguageCode }}" data-theme="{{ $dataTheme }}">
+<head>
+    {{ block "head" . }}
+        {{ partial "head/head.html" . }}
+    {{ end }}
+</head>
+<body>
+    <a class="skip-main" href="#main">{{ i18n "skipToContent" }}</a>
+    <div class="container">
+        <header class="common-header">
+            {{ block "header" . }}
+                {{ partial "head/header.html" . }}
+            {{ end }}
+        </header>
+        <main id="main" tabindex="-1">
+            {{ block "main" . }}{{ end }}
+        </main>
+        {{ block "footer" . }}
+            {{ partial "footer.html" . }}
+        {{ end }}
+    </div>
+</body>
+</html>

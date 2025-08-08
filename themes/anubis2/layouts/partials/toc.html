@@ -1,0 +1,36 @@
+{{ $params := partial "params-helper.html" . }}
+
+{{ $toc := and (gt $params.tocWordCount 0) (ge .WordCount $params.tocWordCount) }}
+{{ if isset page.Params "toc" }}
+  {{ $toc = page.Params.toc }}
+{{ end }}
+
+{{ if  $toc }}
+  {{ $tocContent := .TableOfContents }}
+  {{ if findRE "<li>" $tocContent }}
+  <!-- we show the toc only if we have element in .TableOfContents -->
+  <details class="toc noselect">
+    <summary>Table of Contents</summary>
+    <div class="inner">{{ .TableOfContents }}</div>
+  </details>
+  {{ end }}
+{{ end }}
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
