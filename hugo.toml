@@ -42,3 +42,7 @@ style              = 'catppuccin-frappe' # Find more style at here: https://swap
 [params.anubis2]
   # Leave all parameters empty to use the default values.
 
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
