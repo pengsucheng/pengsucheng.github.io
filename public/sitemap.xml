@@ -2,17 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-        <loc>/posts/secure-pipelines/</loc>
+        <loc>//localhost:1313/posts/research-chatbox/</loc>
+        <lastmod>2025-08-18T13:03:51-04:00</lastmod>
+      </url><url>
+        <loc>//localhost:1313/posts/</loc>
+        <lastmod>2025-08-18T13:03:51-04:00</lastmod>
+      </url><url>
+        <loc>//localhost:1313/</loc>
+        <lastmod>2025-08-18T13:03:51-04:00</lastmod>
+      </url><url>
+        <loc>//localhost:1313/posts/secure-pipelines/</loc>
         <lastmod>2025-08-08T13:03:51-04:00</lastmod>
       </url><url>
-        <loc>/posts/</loc>
-        <lastmod>2025-08-08T13:03:51-04:00</lastmod>
+        <loc>//localhost:1313/categories/</loc>
       </url><url>
-        <loc>/</loc>
-        <lastmod>2025-08-08T13:03:51-04:00</lastmod>
-      </url><url>
-        <loc>/categories/</loc>
-      </url><url>
-        <loc>/tags/</loc>
+        <loc>//localhost:1313/tags/</loc>
       </url>
 </urlset>

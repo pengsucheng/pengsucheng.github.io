@@ -3,7 +3,7 @@
 
   <channel>
     <title>Random bits</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent blog posts on Random bits</description>
     
     <generator>Hugo (https://gohugo.io)</generator>
@@ -15,7 +15,7 @@
     <webMaster></webMaster>
     
     
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
