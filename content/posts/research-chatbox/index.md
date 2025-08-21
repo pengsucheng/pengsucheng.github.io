@@ -57,7 +57,6 @@ I loaded articles from Zero Day Initiative (ZDI) blogs. Run this once to populat
 
 ### Step 2: Serving the RAG Chatbot
 
-
 The core of the chatbot lives in `serve.py`. This script uses Agno to define an "Agent" that connects the language model (LLM), the knowledge base, and a user interface.
 
 Key components in this file include:
