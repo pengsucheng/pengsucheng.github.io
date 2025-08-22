@@ -140,9 +140,9 @@ Below are two representative examples that show how effectively it retrieves rel
 
 ### Example 1: Digging into a Windows Function
 
-As an N-day researcher, I often need context on obscure functions. For instance, I asked about `KpsCheckKerbResponse` in a Windows DLL.
+As an N-day researcher, I often need context on obscure functions. For instance, I asked about `KpsCheckKerbResponse()` function in a Windows DLL.
 
-**My Query:** "Can you explain the KpsCheckKerbResponse function? Specifically, I would like to know the conditions under which this function can be invoked."
+**My Query:** "Can you explain the KpsCheckKerbResponse() function? Specifically, I would like to know the conditions under which this function can be invoked."
 
 **Chatbot Response:**
 ```markdown
