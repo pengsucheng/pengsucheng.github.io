@@ -7,7 +7,7 @@ theme = "anubis2"
 pagerSize = 5
 
 [params.author]
-name = "Pengsu"
+name = "Pengsu Cheng"
 
 [[menu.main]]
 identifier = "home"
